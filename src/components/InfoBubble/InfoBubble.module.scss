@@ -1,0 +1,34 @@
+.container {
+  width: 443px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #edf3fe;
+  margin-bottom: 15px;
+  position: relative;
+  border-radius: 5px;
+  line-height: 5px;
+  p {
+    font-family: sans-serif;
+    color: #356ae6;
+
+    sup {
+      font-size: 9px;
+      vertical-align: top;
+      position: relative;
+      top: -4px;
+    }
+  }
+}
+
+.caret {
+  position: absolute;
+  bottom: -26px;
+  right: 20px;
+  background-color: transparent;
+  border-top: 10px solid #edf3fe;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: " ";
+}
