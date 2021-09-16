@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        exclude: /\.module.(scss)$/,
+        exclude: /\.module\.scss$/,
         use: [
           isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",

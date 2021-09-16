@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InfoBubble from "./components/InfoBubble/InfoBubble";
-import DonationForm from "./components/DonationForm";
+import DonationForm from "./components/DonationForm/DonationForm";
 import styles from "./App.module";
 
 const App = () => {

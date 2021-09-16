@@ -1,0 +1,33 @@
+.container {
+  width: 400px;
+  border: 1px solid;
+  border-color: #111;
+  box-shadow: 1px 1px 5px 1px #cacaca;
+  border-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  div {
+    margin-bottom: 20px;
+
+    h1 {
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-weight: normal;
+      font-family: sans-serif;
+      color: #555555;
+
+      strong {
+        color: black;
+      }
+    }
+  }
+}
