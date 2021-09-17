@@ -10,22 +10,22 @@
   flex-direction: column;
   position: relative;
 
-  div {
+  .textContainer {
     margin-bottom: 20px;
 
-    h1 {
+    .title {
       font-family: sans-serif;
       font-weight: bold;
       margin-top: 5px;
       margin-bottom: 5px;
     }
 
-    p {
+    .text {
       font-weight: normal;
       font-family: sans-serif;
       color: #555555;
 
-      strong {
+      .bold {
         color: black;
       }
     }

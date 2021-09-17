@@ -6,8 +6,8 @@ const InfoBubble = ({ goal, total }) => {
   return (
     <div className={styles.container}>
       {goalNotReached ? (
-        <p>
-          <sup>$</sup>
+        <p className={styles.bubbleText}>
+          <sup className={styles.super}>$</sup>
           <strong>{goal - total}</strong> still needed to fund this project
         </p>
       ) : (

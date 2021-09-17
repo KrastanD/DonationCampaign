@@ -9,11 +9,12 @@
   position: relative;
   border-radius: 5px;
   line-height: 5px;
-  p {
+
+  .bubbleText {
     font-family: sans-serif;
     color: #356ae6;
 
-    sup {
+    .super {
       font-size: 9px;
       vertical-align: top;
       position: relative;

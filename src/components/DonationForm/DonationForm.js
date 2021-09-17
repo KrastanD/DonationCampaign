@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DonationInput from "../DonationInput/DonationInput";
-import styles from "./DonationForm.module";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import styles from "./DonationForm.module";
 
 function DonationForm({ goal, total, onTotalChange }) {
   const [donors, setDonors] = useState(0);
@@ -20,11 +20,13 @@ function DonationForm({ goal, total, onTotalChange }) {
   return (
     <div className={styles.container}>
       <ProgressBar total={total} goal={goal} />
-      <div>
-        <h1>Only four days left to fund this project</h1>
-        <p>
-          Join the <strong>{donors}</strong> other donors who have already
-          supported this project
+      <div className={styles.textContainer}>
+        <h1 className={styles.title}>
+          Only four days left to fund this project
+        </h1>
+        <p className={styles.text}>
+          Join the <strong className={styles.bold}>{donors}</strong> other
+          donors who have already supported this project
         </p>
       </div>
       <DonationInput
