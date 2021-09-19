@@ -9,7 +9,7 @@ function DonationInput({ amount, onChange, onSubmit }) {
         className={styles.donationInput}
         value={amount > 0 ? amount : ""}
         type="number"
-        min="1.00"
+        min="5.00"
         onChange={onChange}
       />
       <button

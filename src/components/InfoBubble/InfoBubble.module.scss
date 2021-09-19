@@ -1,3 +1,5 @@
+@import "../../common/styles/fonts";
+
 .container {
   width: 443px;
   display: flex;
@@ -9,20 +11,17 @@
   position: relative;
   border-radius: 5px;
   line-height: 5px;
-
-  .bubbleText {
-    font-family: sans-serif;
-    color: #356ae6;
-
-    .super {
-      font-size: 9px;
-      vertical-align: top;
-      position: relative;
-      top: -4px;
-    }
-  }
+  font-family: IBM Plex Sans;
 }
-
+.bubbleText {
+  color: #356ae6;
+}
+.super {
+  font-size: 9px;
+  vertical-align: top;
+  position: relative;
+  top: -4px;
+}
 .caret {
   position: absolute;
   bottom: -26px;

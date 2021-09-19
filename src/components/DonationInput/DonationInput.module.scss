@@ -1,36 +1,41 @@
 @import "../../common/styles/colors";
+@import "../../common/styles/fonts";
 
 .container {
   position: relative;
   display: flex;
   flex-direction: row;
-
-  .dollarSign {
-    position: absolute;
-    left: 5px;
-    bottom: -4px;
-    color: #555555;
-  }
-  .donationInput {
-    height: 40px;
-    flex: 1;
-    padding: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px solid;
-    border-right: none;
-    border-color: $color_light_gray;
-    padding-left: 15px;
-    font-size: 20px;
-  }
-  .donationButton {
-    height: 42px;
-    width: 100px;
-    font-family: sans-serif;
-    color: white;
-    background-color: $color_mint;
-    border: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+}
+.dollarSign {
+  position: absolute;
+  left: 5px;
+  bottom: -3px;
+  color: #888888;
+  font-family: IBM Plex Sans;
+  font-size: 15px;
+}
+.donationInput {
+  height: 40px;
+  flex: 1;
+  padding: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid;
+  border-right: none;
+  border-color: $color_light_gray;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: IBM Plex Sans;
+  font-weight: bold;
+}
+.donationButton {
+  height: 42px;
+  width: 100px;
+  font-family: IBM Plex Sans;
+  color: white;
+  background-color: $color_mint;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
 }
