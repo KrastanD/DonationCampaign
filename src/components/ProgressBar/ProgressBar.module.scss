@@ -9,14 +9,14 @@
 }
 
 .backgroundBar {
-  @include bar($color_light_mint);
+  @include bar($mint-40);
   width: 462px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .filledBar {
-  @include bar($color_mint);
+  @include bar($mint);
   border-top-left-radius: 5px;
 }
 

@@ -7,10 +7,14 @@ function DonationForm({ goal, total, onTotalChange }) {
   const [donors, setDonors] = useState(0);
   const [amount, setAmount] = useState(0);
 
-  const handleSubmit = () => {
-    onTotalChange(total + amount);
-    setAmount(0);
-    setDonors(donors + 1);
+  const handleSubmit = (errorCallback) => {
+    if (amount >= 5) {
+      onTotalChange(total + amount);
+      setAmount(0);
+      setDonors(donors + 1);
+      return;
+    }
+    errorCallback();
   };
 
   const handleChange = (event) => {
@@ -21,9 +25,9 @@ function DonationForm({ goal, total, onTotalChange }) {
     <div className={styles.container}>
       <ProgressBar total={total} goal={goal} />
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>
+        <h2 className={styles.title}>
           Only four days left to fund this project
-        </h1>
+        </h2>
         <p className={styles.text}>
           Join the <strong className={styles.bold}>{donors}</strong> other
           donors who have already supported this project

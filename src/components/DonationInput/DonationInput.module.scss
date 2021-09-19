@@ -1,6 +1,19 @@
 @import "../../common/styles/colors";
 @import "../../common/styles/fonts";
 
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorText {
+  font-family: IBM Plex Sans;
+  color: $strawberry;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -22,7 +35,7 @@
   border-bottom-left-radius: 5px;
   border: 1px solid;
   border-right: none;
-  border-color: $color_light_gray;
+  border-color: $gray-40;
   padding-left: 15px;
   font-size: 18px;
   font-family: IBM Plex Sans;
@@ -33,7 +46,7 @@
   width: 100px;
   font-family: IBM Plex Sans;
   color: white;
-  background-color: $color_mint;
+  background-color: $mint;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
