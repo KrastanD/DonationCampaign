@@ -24,7 +24,7 @@ function DonationForm({ goal, total, onTotalChange }) {
   return (
     <div className={styles.container}>
       <ProgressBar total={total} goal={goal} />
-      <div className={styles.textContainer}>
+      <div>
         <h2 className={styles.title}>
           Only four days left to fund this project
         </h2>
