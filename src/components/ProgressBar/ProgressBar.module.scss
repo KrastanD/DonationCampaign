@@ -1,0 +1,29 @@
+@import "./../../common/styles/colors";
+
+@mixin bar($color) {
+  background-color: $color;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 10px;
+}
+
+.backgroundBar {
+  @include bar($mint-40);
+  width: 462px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.filledBar {
+  @include bar($mint);
+  border-top-left-radius: 5px;
+}
+
+.filled {
+  border-top-right-radius: 5px;
+}
+
+.unfilled {
+  border-top-right-radius: 0px;
+}

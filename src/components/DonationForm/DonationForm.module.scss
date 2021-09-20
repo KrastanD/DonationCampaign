@@ -1,0 +1,29 @@
+@import "./../../common/styles/fonts";
+
+.container {
+  width: 400px;
+  border: 1px solid;
+  border-color: #111;
+  box-shadow: 1px 1px 5px 1px #cacaca;
+  border-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  font-family: Poppins;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.text {
+  font-weight: normal;
+  font-family: IBM Plex Sans;
+  color: #555555;
+}
+.bold {
+  color: black;
+}

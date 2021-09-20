@@ -1,0 +1,54 @@
+@import "../../common/styles/colors";
+@import "../../common/styles/fonts";
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.errorText {
+  font-family: IBM Plex Sans;
+  color: $strawberry;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.dollarSign {
+  position: absolute;
+  left: 5px;
+  bottom: -3px;
+  color: #888888;
+  font-family: IBM Plex Sans;
+  font-size: 15px;
+}
+.donationInput {
+  height: 40px;
+  flex: 1;
+  padding: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid;
+  border-right: none;
+  border-color: $gray-40;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: IBM Plex Sans;
+  font-weight: bold;
+}
+.donationButton {
+  height: 42px;
+  width: 100px;
+  font-family: IBM Plex Sans;
+  color: white;
+  background-color: $mint;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+}
