@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import styles from "./DonationInput.module";
 
-function DonationInput({ amount, onChange, onSubmit }) {
+interface DonationInputProps {
+  amount: number;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onSubmit: (errorCallback: () => void) => void;
+}
+
+function DonationInput({ amount, onChange, onSubmit }: DonationInputProps) {
   const [error, setError] = useState("");
 
   const handleError = () => {

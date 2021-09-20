@@ -11,14 +11,15 @@ module.exports = (env) => {
   const mode = env.production ? "production" : "development";
   const isDevelopment = mode === "development";
   return {
-    entry: __dirname + "/src/index.js",
+    entry: __dirname + "/src/index.tsx",
     module: {
       rules: [
         {
-          test: /\.js(x?)$/,
+          test: /\.(js|ts)x?$/,
           exclude: /node_modules/,
-          loader: "babel-loader",
+          use: ["babel-loader"],
         },
+
         {
           test: /\.module\.scss$/,
           use: [
@@ -59,7 +60,7 @@ module.exports = (env) => {
       ],
     },
     resolve: {
-      extensions: [".js", ".jsx", ".scss"],
+      extensions: [".js", ".jsx", ".scss", ".ts", ".tsx"],
     },
     output: {
       filename: "bundle.js",

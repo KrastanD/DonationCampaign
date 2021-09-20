@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./ProgressBar.module";
 
-const ProgressBar = ({ total, goal }) => {
+interface ProgressBarProps {
+  total: number;
+  goal: number;
+}
+
+const ProgressBar = ({ total, goal }: ProgressBarProps) => {
   return (
     <>
       <div className={styles.backgroundBar} />

@@ -3,11 +3,17 @@ import DonationInput from "../DonationInput/DonationInput";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import styles from "./DonationForm.module";
 
-function DonationForm({ goal, total, onTotalChange }) {
+interface DonationFormProps {
+  goal: number;
+  total: number;
+  onTotalChange: (props: number) => void;
+}
+
+function DonationForm({ goal, total, onTotalChange }: DonationFormProps) {
   const [donors, setDonors] = useState(0);
   const [amount, setAmount] = useState(0);
 
-  const handleSubmit = (errorCallback) => {
+  const handleSubmit = (errorCallback: () => void) => {
     if (amount >= 5) {
       onTotalChange(total + amount);
       setAmount(0);
@@ -17,7 +23,7 @@ function DonationForm({ goal, total, onTotalChange }) {
     errorCallback();
   };
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setAmount(parseInt(event.target.value));
   };
 

@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./InfoBubble.module";
 
-const InfoBubble = ({ goal, total }) => {
+interface InfoBubbleProps {
+  goal: number;
+  total: number;
+}
+
+const InfoBubble = ({ goal, total }: InfoBubbleProps) => {
   const goalNotReached = goal > total;
   return (
     <div className={styles.container}>
