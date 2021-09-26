@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import DonationInput from "../DonationInput/DonationInput";
-import ProgressBar from "../ProgressBar/ProgressBar";
+import DonationInput from "../DonationInput";
+import ProgressBar from "../ProgressBar";
 import styles from "./DonationForm.module";
 
 interface DonationFormProps {

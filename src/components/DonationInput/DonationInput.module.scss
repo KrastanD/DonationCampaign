@@ -1,5 +1,5 @@
-@import "../../common/styles/colors";
-@import "../../common/styles/fonts";
+@use "../../common/styles/colors";
+@use "../../common/styles/fonts";
 
 .errorContainer {
   display: flex;
@@ -8,7 +8,7 @@
 
 .errorText {
   font-family: IBM Plex Sans;
-  color: $strawberry;
+  color: colors.$strawberry;
   margin-top: 0px;
   margin-bottom: 5px;
   font-size: small;
@@ -35,7 +35,7 @@
   border-bottom-left-radius: 5px;
   border: 1px solid;
   border-right: none;
-  border-color: $gray-40;
+  border-color: colors.$gray-40;
   padding-left: 15px;
   font-size: 18px;
   font-family: IBM Plex Sans;
@@ -46,7 +46,7 @@
   width: 100px;
   font-family: IBM Plex Sans;
   color: white;
-  background-color: $mint;
+  background-color: colors.$mint;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
